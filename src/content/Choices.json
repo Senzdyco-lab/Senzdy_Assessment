@@ -1,44 +1,44 @@
 {
-    "max":5,
+    "max":4,
     "high":[{
         "text": "ไม่เคย",
-        "value": 1
+        "value": 0
     },
      {
         "text": "น้อยครั้ง",
-        "value": 2
+        "value": 1
     },
     {
         "text": "บางครั้ง",
-        "value": 3
+        "value": 2
     },
     {
         "text": "บ่อยครั้ง",
-        "value": 4
+        "value": 3
     },
     {
         "text": "ทุกครั้ง",
-        "value": 5
+        "value": 4
     }],
     "low":[{
         "text": "ไม่เคย",
-        "value": 5
+        "value": 4
     },
      {
         "text": "น้อยครั้ง",
-        "value": 4
-    },
-    {
-        "text": "บางครั้ง",
         "value": 3
     },
     {
-        "text": "บ่อยครั้ง",
+        "text": "บางครั้ง",
         "value": 2
     },
     {
-        "text": "ทุกครั้ง",
+        "text": "บ่อยครั้ง",
         "value": 1
+    },
+    {
+        "text": "ทุกครั้ง",
+        "value": 0
     }
 ]
 }

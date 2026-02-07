@@ -29,7 +29,7 @@ const LikertRadio = ({ value, scaleReversed, onChange }) => (
     value={value}
     onChange={(e) => onChange(e.target.value)}
   >
-    {(scaleReversed === true ? Choices.low : Choices.high).map((v) => (
+    {(scaleReversed=== true ? Choices.low : Choices.high).map((v) => (
       <PurpleRadioButton key={v.text} value={v.value}>{v.text}</PurpleRadioButton>
     ))}
   </PurpleRadioGroup>
@@ -45,7 +45,7 @@ const LikertRadio = ({ value, scaleReversed, onChange }) => (
 
 // }
 
-const QuestionRow = ({ question, savedData, scaleReversed, onChange }) => {
+const QuestionRow = ({ question, savedData, onChange }) => {
   return (
     <Card id={question.id} style={{ marginBottom: 16 }}>
       <Typography.Text strong>
@@ -54,7 +54,7 @@ const QuestionRow = ({ question, savedData, scaleReversed, onChange }) => {
 
       <LikertRadio
         value={savedData?.[question.id]}
-        scaleReversed={scaleReversed}
+        scaleReversed={question.scaleReversed}
         onChange={onChange}
       />
     </Card>
@@ -185,7 +185,6 @@ const AssessmentBlock = ({ survey }) => {
                           key={q.id}
                           question={q}
                           savedData={answers?.[system.id]?.[child.id]}
-                          scaleReversed={child.scaleReversed}
                           onChange={(v) => setAnswer(system.id, child.id, q.id, v)}
                         />
                       );
