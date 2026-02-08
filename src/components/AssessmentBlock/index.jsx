@@ -16,6 +16,30 @@ import {
   PurpleRadioGroup
 } from "./styles";
 
+const scoreLegend = [
+  {
+    title: "ไม่เคย",
+    desc: "ไม่เคยรู้สึกชอบ",
+  },
+  {
+    title: "น้อยครั้ง",
+    desc: "นาน ๆ จึงจะรู้สึกชอบสักครั้งหนึ่ง",
+  },
+  {
+    title: "บางครั้ง",
+    desc: "รู้สึกชอบเป็นบางครั้ง",
+  },
+  {
+    title: "บ่อยครั้ง",
+    desc: "รู้สึกชอบเกือบทุกครั้ง",
+  },
+  {
+    title: "ทุกครั้ง",
+    desc: "รู้สึกชอบทุกครั้ง",
+  },
+];
+
+
 const scrollTo = (id) => {
   const element = document.getElementById(id);
   element.scrollIntoView({
@@ -167,7 +191,28 @@ const AssessmentBlock = ({ survey }) => {
       <Fade triggerOnce>
         <HeadderTitle>{"แบบประเมินความต้องการรับรู้ประสาทสัมผัส"}</HeadderTitle>
         <p className="text-gray-600 mb-8">Target age: {survey.targetAge}</p>
-
+    <Card
+      title="เกณฑ์การให้คะแนน"
+      style={{ borderRadius: 16, marginTop: 24 ,marginBottom: 24}}
+    >
+      <Table
+    dataSource={scoreLegend}
+    pagination={false}
+    showHeader={false}
+    bordered={false}
+    rowKey="score"
+    columns={[
+      {
+        dataIndex: "title",
+        width: 120,
+        render: (text) => <strong>{text}</strong>,
+      },
+      {
+        dataIndex: "desc",
+      },
+    ]}
+  />
+    </Card>
 
         {survey.Assessment.map((system) => (
           <div key={system.id} className="mb-10">
