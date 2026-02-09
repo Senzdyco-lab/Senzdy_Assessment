@@ -1,4 +1,4 @@
-import{j as i,d as l,r as n}from"./index-Zovp393y.js";const c=({src:e,width:t,height:o})=>i.jsx("img",{src:`./img/svg/${e}`,alt:e,width:t,height:o}),a=l("div")`
+import{j as i,d as l,r as n}from"./index-DkhDkyY3.js";const c=({src:e,width:t,height:o})=>i.jsx("img",{src:`./img/svg/${e}`,alt:e,width:t,height:o}),a=l("div")`
   padding: 10px;
   position: fixed;
   right: 30px;
