@@ -1,15 +1,16 @@
 {
     "low": {
-        "low": "Bystander",
-        "mid": "World Weury",
+        "low": "Apathy",
+        "mid": "Boredom",
         "high": "Seeker"
     },
     "mid": {
-        "low": "Worrier",
-        "mid": "Mediator",
-        "high": "Self-discipline"
+        "low": "Worry",
+        "mid": "Relaxation",
+        "high": "Control"
     },
-    "high": {"low": "Avoider",
-        "mid": "Sensor",
-        "high": "Solitude"}
+    "high": {
+        "low": "Anxiety",
+        "mid": "Passion",
+        "high": "Flow"}
 }
