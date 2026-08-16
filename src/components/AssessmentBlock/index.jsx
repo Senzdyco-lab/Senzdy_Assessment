@@ -191,7 +191,7 @@ const AssessmentBlock = ({ survey }) => {
       <Fade triggerOnce>
         <HeadderTitle>{"แบบประเมินความต้องการรับรู้ประสาทสัมผัส"}</HeadderTitle>
         <p className="text-gray-600 mb-8">Target age: {survey.targetAge}</p>
-    <Card
+    {/* <Card
       title="เกณฑ์การให้คะแนน"
       style={{ borderRadius: 16, marginTop: 24 ,marginBottom: 24}}
     >
@@ -212,7 +212,7 @@ const AssessmentBlock = ({ survey }) => {
       },
     ]}
   />
-    </Card>
+    </Card> */}
 
         {survey.Assessment.map((system) => (
           <div key={system.id} className="mb-10">
